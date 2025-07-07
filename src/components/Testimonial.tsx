@@ -2,7 +2,7 @@ import { Quote } from "lucide-react";
 
 const Testimonial = () => {
   return (
-    <section className="py-20 px-4 bg-background">
+    <section id="depoimento" className="py-20 px-4 bg-background">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center">
           <div className="w-16 h-16 mx-auto mb-8 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center">

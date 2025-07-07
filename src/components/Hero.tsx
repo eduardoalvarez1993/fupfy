@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-background to-secondary flex items-center justify-center px-4">
+    <section id="inicio" className="min-h-screen bg-gradient-to-b from-background to-secondary flex items-center justify-center px-4 pt-16">
       <div className="container mx-auto text-center max-w-4xl">
         <div className="mb-8">
           <img 
