@@ -6,19 +6,19 @@ const steps = [
   {
     number: "01",
     title: "Responda algumas perguntas sobre o seu negócio",
-    description: "Conte sobre seus clientes, frequência de visitas e tipo de serviço. É rápido e simples.",
+    description: "Conte sobre seus serviços e a frequência de retorno dos seus clientes.",
     icon: step1Icon
   },
   {
     number: "02", 
-    title: "Veja sua régua de comunicação pronta",
-    description: "Receba uma estratégia personalizada de follow-up, criada especialmente para o seu tipo de negócio.",
+    title: "Veja sua estratégia pronta automaticamente",
+    description: "O sistema cria comunicações personalizadas para lembrar seus clientes na hora certa.",
     icon: step2Icon
   },
   {
     number: "03",
     title: "Ative e acompanhe os resultados",
-    description: "Suas mensagens são enviadas automaticamente. Você só acompanha os clientes voltando!",
+    description: "As mensagens são enviadas automaticamente e os clientes voltam.",
     icon: step3Icon
   }
 ];

@@ -3,23 +3,23 @@ import { Check, Settings, Heart, Building } from "lucide-react";
 const benefits = [
   {
     icon: Settings,
-    title: "Automatizado e inteligente",
-    description: "Funciona sozinho, 24/7, sem você precisar lembrar de nada"
+    title: "Funciona sozinho, 24/7",
+    description: "Trabalha para você mesmo quando está dormindo ou ocupado"
   },
   {
     icon: Check,
-    title: "Fácil de configurar", 
+    title: "Configuração simples e rápida", 
     description: "Pronto em minutos, sem complicações ou sistemas complexos"
   },
   {
     icon: Heart,
-    title: "Aumenta a fidelização",
-    description: "Clientes se sentem lembrados e voltam mais vezes"
+    title: "Ajuda na fidelização e retorno",
+    description: "Seus clientes se sentem lembrados e voltam mais vezes"
   },
   {
     icon: Building,
-    title: "Ideal para PMEs",
-    description: "Feito especialmente para pequenos negócios que querem crescer"
+    title: "Feito para pequenos negócios",
+    description: "Criado especialmente para salões, clínicas, petshops e oficinas"
   }
 ];
 

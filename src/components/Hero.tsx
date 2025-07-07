@@ -14,13 +14,12 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-          Traga seus clientes de volta,{" "}
-          <span className="text-primary">sem esforço</span>
+          Seus clientes não esqueceram de você.{" "}
+          <span className="text-primary">Eles só precisam de um lembrete no momento certo.</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-          O FUPFY automatiza o relacionamento com seus clientes e aumenta a recompra 
-          com mensagens personalizadas, no tempo certo
+          O FUPFY cuida disso por você — de forma automática, simples e eficiente.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
