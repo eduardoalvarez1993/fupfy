@@ -9,8 +9,8 @@
     <meta property="og:title" content="FUPFY - Follow-up Inteligente: Automação de Follow-up para Vendas">
     <meta property="og:description" content="Automatize o follow-up dos seus clientes e aumente suas vendas com FUPFY. Teste grátis por 7 dias. Soluções para PMEs e Enterprise.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fupfy.com.br">
-    <meta property="og:image" content="https://fupfy.com.br/assets/mobile.png"> 
+    <meta property="og:url" content="https://ijvmvull.manus.space">
+    <meta property="og:image" content="https://ijvmvull.manus.space/social-share-image.jpg"> <!-- Substituir com URL real da imagem -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -146,13 +146,24 @@
         <div class="container">
             <h2>Escolha o plano ideal para seu negócio</h2>
             <p class="section-subtitle">Teste grátis por 7 dias, sem compromisso</p>
+            <div class="billing-toggle">
+                <span>Mensal</span>
+                <label class="switch">
+                    <input type="checkbox" checked id="billing-switch">
+                    <span class="slider round"></span>
+                </label>
+                <span>Anual <span class="save-badge">Economize 20%</span></span>
+            </div>
             <div class="pricing-cards">
-                <div class="pricing-card">
+                <div class="pricing-card" data-plan="comecar">
                     <h3>Começar</h3>
                     <div class="price">
                         <span class="currency">R$</span>
-                        <span class="amount">29</span>
-                        <span class="period">,90/mês</span>
+                        <span class="amount monthly-price">29</span>
+                        <span class="period monthly-price">,90/mês</span>
+                        <span class="amount annual-price" style="display: none;">23</span>
+                        <span class="period annual-price" style="display: none;">,92/mês</span>
+                        <span class="original-monthly-price" style="display: none;">R$ 29,90</span>
                     </div>
                     <ul class="features">
                         <li>✅ Até 500 contatos</li>
@@ -162,13 +173,16 @@
                     </ul>
                     <button class="btn-outline" id="btn-plan-comecar">Começar teste grátis</button>
                 </div>
-                <div class="pricing-card featured">
+                <div class="pricing-card featured" data-plan="crescer">
                     <div class="popular-badge">Mais Popular</div>
                     <h3>Crescer</h3>
                     <div class="price">
                         <span class="currency">R$</span>
-                        <span class="amount">59</span>
-                        <span class="period">,90/mês</span>
+                        <span class="amount monthly-price">59</span>
+                        <span class="period monthly-price">,90/mês</span>
+                        <span class="amount annual-price" style="display: none;">47</span>
+                        <span class="period annual-price" style="display: none;">,92/mês</span>
+                        <span class="original-monthly-price" style="display: none;">R$ 59,90</span>
                     </div>
                     <ul class="features">
                         <li>✅ Até 2.000 contatos</li>
@@ -179,12 +193,15 @@
                     </ul>
                     <button id="btn-plan-crescer" class="btn-primary">Começar teste grátis</button>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card" data-plan="evoluir">
                     <h3>Evoluir</h3>
                     <div class="price">
                         <span class="currency">R$</span>
-                        <span class="amount">129</span>
-                        <span class="period">,90/mês</span>
+                        <span class="amount monthly-price">129</span>
+                        <span class="period monthly-price">,90/mês</span>
+                        <span class="amount annual-price" style="display: none;">103</span>
+                        <span class="period annual-price" style="display: none;">,92/mês</span>
+                        <span class="original-monthly-price" style="display: none;">R$ 129,90</span>
                     </div>
                     <ul class="features">
                         <li>✅ Contatos ilimitados</li>
@@ -363,7 +380,7 @@
                 <p>&copy; 2024 FUPFY. Todos os direitos reservados.</p>
             </div>
         </div>
-    </footer>
+    </div>
 
     <!-- Modal -->
     <div class="modal-overlay" id="modal-overlay">
