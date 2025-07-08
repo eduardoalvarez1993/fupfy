@@ -1,24 +1,396 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fupfy | Follow up inteligente</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUPFY - Follow-up Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">FUPFY</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#como-funciona">Como funciona</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#precos">Preços</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <button class="btn-primary" id="btn-comecar">Começar agora</button>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="header-shadow"></div>
+    </header>
 
-    <meta property="og:title" content="fupfy-cliente-feliz" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Seus clientes não esqueceram de você. Eles só precisam de um lembrete no momento certo.</h1>
+                <p>Automatize o follow-up dos seus clientes e aumente suas vendas</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" id="btn-comece-gratis">Comece grátis</button>
+                    <a href='#como-funciona' class="btn-secondary">Ver como funciona</a>
+                </div>
+            </div>
+            <div class="hero-image">
+               <img src='assets/mobile.png'>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Como Funciona -->
+    <section class="como-funciona" id="como-funciona">
+        <div class="container">
+            <h2>Como funciona</h2>
+            <p class="section-subtitle">Em apenas 3 passos simples, você já está enviando follow-ups de forma automática</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <div class="step-number">1</div>
+                    </div>
+                    <h3>Registre clientes potenciais</h3>
+                    <p>Adicione seus leads de forma simples e organize sua base de clientes</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <div class="step-number">2</div>
+                    </div>
+                    <h3>Veja sua estratégia ganhar vida automaticamente</h3>
+                    <p>Configure automações personalizadas para cada tipo de cliente</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <div class="step-number">3</div>
+                    </div>
+                    <h3>Atraia e converta os resultados</h3>
+                    <p>Acompanhe métricas e veja suas vendas crescerem</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Transformação -->
+    <section class="transformacao">
+        <div class="container">
+            <h2>A transformação do seu negócio</h2>
+            <p class="section-subtitle">Veja a diferença que o follow-up automático faz no seu negócio</p>
+            <div class="comparison">
+                <div class="before">
+                    <h3>❌ Antes</h3>
+                    <ul>
+                        <li>❌ Clientes esquecidos</li>
+                        <li>❌ Follow-up manual e demorado</li>
+                        <li>❌ Oportunidades perdidas</li>
+                        <li>❌ Baixa taxa de conversão</li>
+                    </ul>
+                </div>
+                <div class="after">
+                    <h3>✅ Depois</h3>
+                    <ul>
+                        <li>✅ Follow-up automático</li>
+                        <li>✅ Clientes sempre lembrados</li>
+                        <li>✅ Mais vendas e conversões</li>
+                        <li>✅ Relacionamento duradouro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por que escolher -->
+    <section class="por-que-escolher">
+        <div class="container">
+            <h2>Por que escolher o FUPFY?</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Fácil de usar</h3>
+                    <p>Não precisa de conhecimento técnico</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Configuração simples e rápida</h3>
+                    <p>Em menos de 5 minutos você está pronto</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Aumento de fidelização e vendas</h3>
+                    <p>Resultados comprovados pelos nossos clientes</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Mais conversões negócios</h3>
+                    <p>Transforme leads em clientes fiéis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Planos -->
+    <section class="planos" id="precos">
+        <div class="container">
+            <h2>Escolha o plano ideal para seu negócio</h2>
+            <p class="section-subtitle">Teste grátis por 7 dias, sem compromisso</p>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Começar</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">29</span>
+                        <span class="period">,90/mês</span>
+                    </div>
+                    <ul class="features">
+                        <li>✅ Até 500 contatos</li>
+                        <li>✅ 3 campanhas ativas</li>
+                        <li>✅ Relatórios básicos</li>
+                        <li>✅ Suporte por email</li>
+                    </ul>
+                    <button class="btn-outline" id='btn-plan-comecar'>Começar teste grátis</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Mais Popular</div>
+                    <h3>Crescer</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">59</span>
+                        <span class="period">,90/mês</span>
+                    </div>
+                    <ul class="features">
+                        <li>✅ Até 2.000 contatos</li>
+                        <li>✅ Campanhas ilimitadas</li>
+                        <li>✅ Relatórios avançados</li>
+                        <li>✅ Suporte prioritário</li>
+                        <li>✅ Integrações básicas</li>
+                    </ul>
+                    <button id='btn-plan-crescer' class="btn-primary">Começar teste grátis</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Evoluir</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">129</span>
+                        <span class="period">,90/mês</span>
+                    </div>
+                    <ul class="features">
+                        <li>✅ Contatos ilimitados</li>
+                        <li>✅ Campanhas ilimitadas</li>
+                        <li>✅ Relatórios personalizados</li>
+                        <li>✅ Suporte 24/7</li>
+                        <li>✅ API completa</li>
+                        <li>✅ Gerente dedicado</li>
+                    </ul>
+                    <button id='btn-plan-evoluir' class="btn-outline">Começar teste grátis</button>
+                </div>
+            </div>
+            <div class="enterprise-card">
+                <div class="enterprise-content">
+                    <div class="enterprise-info">
+                        <h3>Enterprise</h3>
+                        <p>Soluções personalizadas para grandes empresas com integrações avançadas, white-label, múltiplas equipes e suporte dedicado.</p>
+                    </div>
+                    <div class="enterprise-action">
+                        <a target='_blank' href="https://wa.me/5511965383150?text=Ol%C3%A1%2C+vi+a+Fupfy+e+achei+interessante.+Pode+me+explicar+como+ela+pode+ajudar+meu+neg%C3%B3cio%3F" class="btn-secondary">Entrar em contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"O FUPFY transformou completamente nossa estratégia de vendas. Aumentamos nossa conversão em 40% no primeiro mês!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💼</div>
+                        <div class="author-info">
+                            <h4>João Silva</h4>
+                            <span>CEO, TechStart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Ferramenta incrível! Agora nossos clientes nunca mais são esquecidos e sempre voltam para comprar conosco."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩‍💼</div>
+                        <div class="author-info">
+                            <h4>Maria Santos</h4>
+                            <span>Diretora de Marketing, GrowthCo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Simples de usar e resultados impressionantes. Recomendo para qualquer empresa que quer crescer."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💻</div>
+                        <div class="author-info">
+                            <h4>Carlos Oliveira</h4>
+                            <span>Fundador, DigitalPlus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empresas -->
+    <section class="empresas">
+        <div class="container">
+            <h2>Mais de 500 empresas já confiam no FUPFY</h2>
+            <div class="company-logos">
+                <div class="logo">TechStart</div>
+                <div class="logo">GrowthCo</div>
+                <div class="logo">DigitalPlus</div>
+                <div class="logo">InnovaCorp</div>
+                <div class="logo">NextGen</div>
+                <div class="logo">FutureTech</div>
+                <div class="logo">SmartBiz</div>
+                <div class="logo">ProSales</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Dúvidas frequentes</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como funciona o período de teste?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos 14 dias de teste gratuito para você experimentar todas as funcionalidades do FUPFY sem compromisso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso cancelar a qualquer momento?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, você pode cancelar sua assinatura a qualquer momento sem taxas de cancelamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como funciona o suporte?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos suporte por email, chat e telefone dependendo do seu plano. Nosso time está sempre pronto para ajudar.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso integrar com outras ferramentas?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, o FUPFY se integra com as principais ferramentas do mercado como CRM, email marketing e muito mais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <h2>Pronto para ver seus clientes voltando sem esforço?</h2>
+            <p>Comece hoje mesmo e transforme a forma como você se relaciona com seus clientes</p>
+            <div class="cta-buttons">
+                <button class="btn-primary" id="btn-footer-cta">Começar agora grátis</button>
+               <a target='_blank' href="https://wa.me/5511965383150?text=Ol%C3%A1%2C+vi+a+Fupfy+e+achei+interessante.+Pode+me+explicar+como+ela+pode+ajudar+meu+neg%C3%B3cio%3F" class="btn-secondary">Falar com consultor</a>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>FUPFY</h3>
+                    <p>Follow-up inteligente para seu negócio</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produto</h4>
+                        <ul>
+                            <li><a href="#como-funciona">Como funciona</a></li>
+                            <li><a href="#precos">Preços</a></li>
+                            <li><a href="#depoimentos">Depoimentos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#contato">Contato</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#">Ajuda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FUPFY. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Comece agora mesmo!</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="lead-form">
+                    <div class="form-group">
+                        <input type="text" id="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefone" placeholder="Seu telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="empresa" placeholder="Nome da empresa">
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Começar agora</button>
+                </form>
+                <div class="success-message" id="success-message" style="display: none;">
+                    <div class="success-icon">✅</div>
+                    <h3>Sucesso!</h3>
+                    <p>Obrigado pelo seu interesse! Em breve entraremos em contato para começar sua jornada com o FUPFY.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
+
