@@ -426,12 +426,18 @@ section h2 {
 .pricing-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
     color: var(--text-color);
 }
 
 .price {
     margin-bottom: 2rem;
+}
+
+.pricing-sends {
+    margin-top: 1rem;
+    font-style: italic;
+    color: gray;
+    font-size: small;
 }
 
 .currency {
@@ -1006,7 +1012,6 @@ input:checked + .slider:before {
     text-decoration: line-through;
     color: var(--text-light);
     font-size: 1rem;
-    margin-left: 0.5rem;
 }
 
 .price .amount.annual-price, .price .period.annual-price {
@@ -1040,8 +1045,8 @@ input:checked + .slider:before {
     display: block;
     width: 100%;
     text-align: center;
-    margin-top: 0.5rem;
 }
+
 
 @media (max-width: 768px) {
     .pricing-cards {

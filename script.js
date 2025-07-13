@@ -8,6 +8,9 @@ const successMessage = document.getElementById("success-message");
 const btnComecar = document.getElementById("btn-comecar");
 const btnComeceGratis = document.getElementById("btn-comece-gratis");
 const btnFooterCta = document.getElementById("btn-footer-cta");
+const btnPlanComecar  = document.getElementById("btn-plan-comecar");
+const btnPlanCrescer = document.getElementById("btn-plan-crescer");
+const btnPlanEvoluir = document.getElementById("btn-plan-evoluir");
 
 // Mobile menu elements
 const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
@@ -52,6 +55,9 @@ function showSuccessMessage() {
 btnComecar.addEventListener("click", openModal);
 btnComeceGratis.addEventListener("click", openModal);
 btnFooterCta.addEventListener("click", openModal);
+btnPlanCrescer.addEventListener("click", openModal);
+btnPlanEvoluir.addEventListener("click", openModal);
+btnPlanComecar.addEventListener("click", openModal);
 
 modalClose.addEventListener("click", closeModal);
 
@@ -86,13 +92,14 @@ leadForm.addEventListener("submit", (e) => {
         return;
     }
     
-    // Email validation
-    const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert("Por favor, insira um email válido.");
-        return;
-    }
-    
+   // Validação de email
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!emailRegex.test(email)) {
+    alert("Por favor, insira um e-mail válido.");
+    return;
+}
+
     // Simulate form submission (since we\\"re not saving anywhere)
     console.log("Lead Data:", {
         nome,
@@ -100,9 +107,23 @@ leadForm.addEventListener("submit", (e) => {
         telefone,
         empresa
     });
+
+    axios
+        .post("https://submit-form.com/2clCKgNiJ", {
+                nome:nome,
+                email:email,
+                telefone:telefone,
+                empresa:empresa,
+        })
+        .then(function (response) {
+          // Show success message
+          showSuccessMessage();
+        })
+        .catch(function (response) {
+          console.error(response);
+        });
     
-    // Show success message
-    showSuccessMessage();
+    
 });
 
 // Mobile Menu Toggle
@@ -374,3 +395,5 @@ updatePricing();
 console.log("FUPFY Landing Page JavaScript loaded successfully!");
 
 
+      
+    
